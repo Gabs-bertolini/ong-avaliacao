@@ -1,4 +1,22 @@
 body
 {
-    background-color: chocolate;
+    background-color: #ffebcd;
 }
+
+.container
+{
+    margin-top: 100px;
+
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+.btn-custom {
+    background-color: #b9a494; /* Altere essa cor como quiser */
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
