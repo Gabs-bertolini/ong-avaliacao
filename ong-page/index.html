@@ -32,6 +32,105 @@
                     <div id="institutionNameError" class="invalid-feedback"></div>
                 </div>
 
+                <div class="col-md-6">
+                    <label for="helpType" class="form-label required-label">Tipo de Ajuda</label>
+                    <select class="form-select" id="helpType" required>
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</option>
+                        <option value="Doação de Roupas">Doação de Roupas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <div id="helpTypeError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="needTitle" class="form-label required-label">Título da Necessidade</label>
+                    <input type="text" class="form-control" id="needTitle" required>
+                    <div id="needTitleError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="col-12">
+                    <label for="detailedDescription" class="form-label required-label">Descrição Detalhada</label>
+                    <textarea class="form-control" id="detailedDescription" rows="4" required></textarea>
+                    <div id="detailedDescriptionError" class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label for="cep" class="form-label required-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" required maxlength="9" placeholder="00000-000">
+                    <div id="cepError" class="invalid-feedback"></div>
+                  </div>
+                  
+                  <div class="col-md-8">
+                    <label for="street" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="street" readonly>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="neighborhood" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="neighborhood" readonly>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <label for="city" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="city" readonly>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <label for="state" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="state" readonly>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label required-label">E-mail de Contato</label>
+                    <input type="email" class="form-control" id="contactEmail" required>
+                    <div id="contactEmailError" class="invalid-feedback"></div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="contactPhone" class="form-label">Telefone de Contato</label>
+                    <input type="tel" class="form-control" id="contactPhone" placeholder="(00) 00000-0000">
+                    <div id="contactPhoneError" class="invalid-feedback"></div>
+                  </div>
+                  
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-custom btn-lg">Cadastrar Necessidade</button>
+                  </div>
+                </div>
+              </form>
+              
+              <div id="success-message" class="alert alert-success mt-4">
+                <h4 class="alert-heading">Cadastro realizado com sucesso!</h4>
+                <p>Sua necessidade foi registrada e será avaliada pela nossa equipe. Em breve, voluntários poderão entrar em contato para ajudar.</p>
+                <hr>
+                <p class="mb-0">Você pode <a href="#" onclick="resetForm()">cadastrar outra necessidade</a> se desejar.</p>
+              </div>
+            </div>
+          
+            <div class="container mt-5">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <button class="btn btn-custom" onclick="location.href='../ong-page/index.html'">Voltar para Painel da ONG</button>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-custom" onclick="location.href='../volunteer-page/index.html'">Ver Voluntários Disponíveis</button>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container-image">
+              <img src="../images/placeholder.png" alt="Voluntários trabalhando juntos" class="img-fluid">
+            </div>
+          
+            <footer class="bg-dark text-white text-center py-4 mt-5">
+              <p class="mb-0">&copy; 2025 Volunteers For People. Todos os direitos reservados.</p>
+            </footer>
+          
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="script.js"></script>
+
 
 
 </html>
