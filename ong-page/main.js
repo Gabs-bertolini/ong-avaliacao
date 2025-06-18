@@ -41,4 +41,24 @@ function searchCEP(cep) {
         .catch(error => {
             console.error('Erro ao buscar CEP:', error);
         });
+
+document.getElementById('needsForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const institutionName = document.getElementById('institutionName').value.trim();
+    const helpType = document.getElementById('helpType').value;
+    const needTitle = document.getElementById('needTitle').value.trim();
+    const detailedDescription = document.getElementById('detailedDescription').value.trim();
+    const cep = document.getElementById('cep').value.trim();
+    const contactEmail = document.getElementById('contactEmail').value.trim();
+    const contactPhone = document.getElementById('contactPhone').value.trim();
+    
+    if (!institutionName || !helpType || !needTitle || !detailedDescription || !cep || !contactEmail) {
+        console.log('Por favor, preencha todos os campos obrigatórios');
+        return;
+    }
+
+    saveNeed(institutionName, helpType, needTitle, detailedDescription, cep, contactEmail, contactPhone);
+});
+
 }
