@@ -31,3 +31,52 @@ body {
     object-fit: cover; 
     display: block;
 }
+
+
+.search-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .need-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+  
+  .need-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .badge-type {
+    font-size: 0.9rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .btn-details {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-details:hover {
+    background-color: #218838;
+    color: white;
+  }
+
